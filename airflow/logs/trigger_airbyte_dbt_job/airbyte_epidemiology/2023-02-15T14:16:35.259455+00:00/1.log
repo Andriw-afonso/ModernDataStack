@@ -1,0 +1,339 @@
+[2023-02-15 14:19:09,261] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: trigger_airbyte_dbt_job.airbyte_epidemiology 2023-02-15T14:16:35.259455+00:00 [queued]>
+[2023-02-15 14:19:09,319] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: trigger_airbyte_dbt_job.airbyte_epidemiology 2023-02-15T14:16:35.259455+00:00 [queued]>
+[2023-02-15 14:19:09,320] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-15 14:19:09,320] {taskinstance.py:1088} INFO - Starting attempt 1 of 1
+[2023-02-15 14:19:09,320] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2023-02-15 14:19:09,326] {taskinstance.py:1107} INFO - Executing <Task(AirbyteTriggerSyncOperator): airbyte_epidemiology> on 2023-02-15T14:16:35.259455+00:00
+[2023-02-15 14:19:09,331] {standard_task_runner.py:52} INFO - Started process 3375 to run task
+[2023-02-15 14:19:09,334] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'trigger_airbyte_dbt_job', 'airbyte_epidemiology', '2023-02-15T14:16:35.259455+00:00', '--job-id', '20', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dag_airbyte_dbt.py', '--cfg-path', '/tmp/tmpvuz_th0i', '--error-file', '/tmp/tmpnu59dnq_']
+[2023-02-15 14:19:09,334] {standard_task_runner.py:77} INFO - Job 20: Subtask airbyte_epidemiology
+[2023-02-15 14:19:09,424] {logging_mixin.py:104} INFO - Running <TaskInstance: trigger_airbyte_dbt_job.airbyte_epidemiology 2023-02-15T14:16:35.259455+00:00 [running]> on host 94d7678361e3
+[2023-02-15 14:19:09,526] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_airbyte_dbt_job
+AIRFLOW_CTX_TASK_ID=airbyte_epidemiology
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-15T14:16:35.259455+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-02-15T14:16:35.259455+00:00
+[2023-02-15 14:19:09,536] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:09,538] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/connections/sync
+[2023-02-15 14:19:15,247] {airbyte.py:74} INFO - Job 11 was submitted to Airbyte Server
+[2023-02-15 14:19:15,249] {airbyte.py:76} INFO - Waiting for job 11 to complete
+[2023-02-15 14:19:18,260] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:18,262] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:21,326] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:21,327] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:24,435] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:24,438] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:27,732] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:27,733] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:30,874] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:30,875] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:34,112] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:34,113] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:37,923] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:37,924] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:42,117] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:42,118] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:46,051] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:46,052] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:49,932] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:49,933] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:53,543] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:53,544] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:19:57,565] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:19:57,566] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:20:01,332] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:20:01,333] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:20:05,412] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:20:05,413] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:20:12,324] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:20:12,325] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:20:18,655] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:20:18,656] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:20:22,767] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:20:22,768] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:20:27,478] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:20:27,507] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:20:32,741] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:20:32,742] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:20:38,428] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:20:38,429] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:20:46,054] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:20:46,054] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:20:52,664] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:20:52,665] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:21:00,636] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:21:00,637] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:21:09,930] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:21:09,932] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:21:20,075] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:21:20,075] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:21:26,986] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:21:26,987] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:21:33,432] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:21:33,433] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:21:39,572] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:21:39,573] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:21:45,524] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:21:45,524] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:21:53,424] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:21:53,425] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:22:04,415] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:22:04,416] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:22:21,427] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:22:21,428] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:22:28,950] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:22:28,951] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:22:37,546] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:22:37,547] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:22:45,718] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:22:45,719] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:22:56,215] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:22:56,217] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:23:08,404] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:23:08,405] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:23:16,141] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:23:16,142] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:23:33,440] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:23:33,441] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:23:55,047] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:23:55,048] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:24:11,867] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:24:11,868] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:24:20,747] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:24:20,748] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:24:29,349] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:24:29,350] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:24:39,243] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:24:39,244] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:24:48,248] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:24:48,249] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:25:01,428] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:25:01,429] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:25:10,285] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:25:10,286] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:25:22,844] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:25:22,845] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:25:37,523] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:25:37,524] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:25:50,938] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:25:50,939] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:25:58,735] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:25:58,736] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:26:06,119] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:26:06,119] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:26:20,328] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:26:20,329] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:26:34,843] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:26:34,844] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:26:42,745] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:26:42,746] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:26:52,124] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:26:52,125] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:27:05,428] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:27:05,429] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:27:18,650] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:27:18,651] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:27:26,223] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:27:26,224] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:27:34,081] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:27:34,082] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:27:42,187] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:27:42,188] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:27:52,436] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:27:52,438] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:28:04,621] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:28:04,622] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:28:20,714] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:28:20,717] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:28:38,116] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:28:38,117] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:28:55,449] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:28:55,450] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:29:10,129] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:29:10,136] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:29:21,620] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:29:21,628] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:29:36,944] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:29:36,945] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:29:50,356] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:29:50,357] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:30:01,211] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:30:01,212] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:30:14,956] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:30:14,957] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:30:29,420] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:30:29,426] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:30:38,706] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:30:38,707] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:30:46,478] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:30:46,479] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:30:58,643] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:30:58,644] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:31:11,034] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:31:11,037] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:31:25,261] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:31:25,262] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:31:38,247] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:31:38,248] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:31:49,354] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:31:49,407] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:32:03,378] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:32:03,379] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:32:18,317] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:32:18,318] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:32:38,816] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:32:38,817] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:32:58,528] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:32:58,529] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:33:10,724] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:33:10,728] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:33:23,552] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:33:23,553] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:33:37,664] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:33:37,665] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:33:48,652] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:33:48,653] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:34:01,226] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:34:01,227] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:34:15,162] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:34:15,163] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:34:28,342] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:34:28,343] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:34:41,135] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:34:41,136] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:34:51,804] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:34:51,805] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:34:59,053] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:34:59,054] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:35:10,147] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:35:10,207] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:35:22,176] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:35:22,177] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:35:30,015] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:35:30,016] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:35:43,163] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:35:43,165] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:35:53,109] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:35:53,117] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:36:01,195] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:36:01,196] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:36:15,755] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:36:15,755] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:36:28,328] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:36:28,329] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:36:39,262] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:36:39,263] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:36:53,237] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:36:53,238] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:37:05,549] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:37:05,550] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:37:17,129] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:37:17,130] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:37:30,644] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:37:30,645] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:37:42,351] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:37:42,352] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:37:56,227] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:37:56,228] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:38:12,122] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:38:12,123] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:38:30,211] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:38:30,212] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:38:46,627] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:38:46,628] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:38:55,109] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:38:55,110] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:39:04,019] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:39:04,021] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:39:11,215] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:39:11,216] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:39:19,165] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:39:19,166] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:39:31,615] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:39:31,616] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:39:38,566] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:39:38,567] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:39:45,314] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:39:45,315] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:39:53,554] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:39:53,555] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:40:07,815] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:40:07,816] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:40:17,919] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:40:17,920] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:40:30,213] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:40:30,214] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:40:44,211] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:40:44,212] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:40:57,030] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:40:57,033] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:41:12,919] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:41:12,920] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:41:23,149] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:41:23,150] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:41:30,838] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:41:30,839] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:41:38,748] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:41:38,749] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:41:45,526] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:41:45,527] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:41:55,715] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:41:55,716] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:42:09,322] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:42:09,323] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:42:20,724] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:42:20,724] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:42:32,610] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:42:32,611] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:42:47,355] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:42:47,356] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:42:59,521] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:42:59,522] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:43:12,128] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:43:12,129] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:43:26,150] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:43:26,151] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:43:39,109] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:43:39,110] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:43:49,914] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:43:49,915] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:44:03,354] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:44:03,355] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:44:19,619] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:44:19,620] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:44:34,421] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:44:34,422] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:44:50,659] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:44:50,660] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:44:58,139] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:44:58,140] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:45:06,311] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:45:06,312] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:45:20,255] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:45:20,256] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:45:34,838] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:45:34,839] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:45:45,912] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:45:45,913] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:45:54,461] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:45:54,462] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:46:01,155] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:46:01,156] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:46:12,539] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:46:12,540] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:46:28,013] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:46:28,014] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:46:37,149] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:46:37,150] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:46:44,149] {base.py:78} INFO - Using connection to: id: airbyte_example. Host: airbyte-proxy, Port: 8000, Schema: , Login: , Password: None, extra: {}
+[2023-02-15 14:46:44,150] {http.py:140} INFO - Sending 'POST' to url: http://airbyte-proxy:8000/api/v1/jobs/get
+[2023-02-15 14:46:50,006] {local_task_job.py:76} ERROR - Received SIGTERM. Terminating subprocesses
+[2023-02-15 14:46:50,010] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 3375
+[2023-02-15 14:46:51,908] {taskinstance.py:1284} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-02-15 14:46:52,015] {airbyte.py:72} INFO - Retrying. Airbyte API returned server error when waiting for job: Task received SIGTERM signal
+[2023-02-15 14:46:54,214] {local_task_job.py:76} ERROR - Received SIGTERM. Terminating subprocesses
+[2023-02-15 14:46:54,215] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 3375
+[2023-02-15 14:46:54,216] {taskinstance.py:1284} ERROR - Received SIGTERM. Terminating subprocesses.
